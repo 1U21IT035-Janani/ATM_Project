@@ -1,6 +1,6 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class Project {
+public class ATM_Project {
 	public static void main(String[] args) {
 		int pin = 1234;
 		double balance = 10000;
@@ -28,11 +28,12 @@ public class Project {
 					System.out.println("press 2: Add Amount");
 					System.out.println("press 3: Take Amount");
 					System.out.println("press 4: EXIT!");
-		            System.out.print("Enter your choice: ");
+		           	        System.out.print("Enter your choice: ");
 
-		            int option = sc.nextInt();
+		                        int option = sc.nextInt();
 					
 					switch(option) { 
+							
 						case 1:
 							System.out.println("your current balance is " + balance + "\n");
 							break;
@@ -58,25 +59,34 @@ public class Project {
 							}
 							break;
 						case 4:
-		                    System.out.println("Thank you for using the ATM.");
-		                    break;
+		                             	      System.out.println("Thank you for using the ATM.");
+		                                      break;
 							
 						default:
-		                    System.out.println("Invalid choice. Please enter a valid option. \n");
-	         				break;
+		                                       System.out.println("Invalid choice. Please enter a valid option. \n");
+	         				       break;
+					
 					}
 				}
-				}
-				else {
-					System.out.println("Error: your pin number is Incorrect please check your pin number");
-				}
-				}
-				catch(java.util.InputMismatchException e) {
-					System.out.println("Error: Invalid input.please enter valid pin number");
-				}
-				finally {
-					sc.close();
-				}
+			}
+			else {
+				System.out.println("Error: your pin number is Incorrect please check your pin number");
+			}
+		}
+		catch(java.util.InputMismatchException e) {
+				System.out.println("Error: Invalid input.please enter valid pin number");
+		}
+		finally {
+			sc.close();
 		}
 	}
+}
+
+				
+	
 		
+		
+		
+
+		
+				
